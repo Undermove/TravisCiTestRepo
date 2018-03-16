@@ -1,6 +1,19 @@
-language: csharp
-solution: TravelCardsCI.sln
-install:
-- travis_retry nuget restore -source "https://www.nuget.org/api/v2" TravelCardsCI.sln
-script:
-- dotnet TravelCardsCI.sln
+language: csharp  
+sudo: required  
+dist: trusty  
+env:  
+  - CLI_VERSION=latest
+mono:  
+  - 4.2.3
+os:  
+  - linux
+  - osx
+osx_image: xcode7.1  
+branches:  
+  only:
+    - master
+install:  
+  - export DOTNET_INSTALL_DIR="$PWD/.dotnetcli"
+  - export PATH="$DOTNET_INSTALL_DIR:$PATH"  
+script:  
+  - ./build.sh
