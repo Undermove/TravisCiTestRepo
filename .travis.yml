@@ -1,0 +1,13 @@
+language: csharp
+mono: none
+dotnet: 1.1.5
+solution: TravelCardsCI.sln
+script:    # the following commands are just examples, use whatever your build process requires
+  - ./build.sh
+  - ./test.sh
+  - grep "Test Results" build.log
+  - xbuild /p:Configuration=Release solution-name.sln
+install:
+  - sudo apt-get install -y gtk-sharp2
+  - nuget restore TravelCardsCI.sln
+  - nuget install xunit.runners -Version 1.9.2 -OutputDirectory testrunner
