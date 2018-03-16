@@ -6,4 +6,4 @@ dotnet: 2.0.0
 before_script:
   - dotnet restore
 script:  
-  - dotnet test /TravelCardsSortingTest/TravelCardsSortingTest -c Release -f netcoreapp2.0
+  - dotnet test ~/TravelCardsSortingTest/TravelCardsSortingTest.csproj -c Release -f netcoreapp2.0
