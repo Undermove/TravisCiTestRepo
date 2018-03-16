@@ -3,4 +3,4 @@ solution: TravelCardsCI.sln
 install:
 - travis_retry nuget restore -source "https://www.nuget.org/api/v2" TravelCardsCI.sln
 script:
-- xbuild TravelCardsCI.sln
+- dotnet TravelCardsCI.sln
