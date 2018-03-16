@@ -6,4 +6,4 @@ dotnet: 2.0.0
 before_script:
   - dotnet restore
 script:  
-  - dotnet test .\TravelCardsSortingTest\TravelCardsSortingTest.csproj -c Debug -f netcoreapp2.0
+  - dotnet test .\TravelCardsSortingTest.csproj -c Debug -f netcoreapp2.0
