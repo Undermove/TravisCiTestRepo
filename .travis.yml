@@ -1,19 +1,9 @@
 language: csharp  
 sudo: required  
 dist: trusty  
-env:  
-  - CLI_VERSION=latest
-mono:  
-  - 4.2.3
-os:  
-  - linux
-  - osx
-osx_image: xcode7.1  
-branches:  
-  only:
-    - master
-install:  
-  - export DOTNET_INSTALL_DIR="$PWD/.dotnetcli"
-  - export PATH="$DOTNET_INSTALL_DIR:$PATH"  
+mono: none
+dotnet: 2.0.0-preview2-006497
+before_script:
+  - dotnet restore
 script:  
-  - ./build.sh
+  - dotnet test ./TravelCardsSortingTest -c Release -f netcoreapp2.0
