@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.0",
-    "signature": "ee8db1b77879e8b52ac8d9bd9fd554aa80d86639"
+    "signature": "94d9c2f14f2284b7c26bea11f12dc662c96e1618"
   },
   "compilationOptions": {},
   "targets": {
@@ -11,6 +11,7 @@
           "Microsoft.NET.Test.Sdk": "15.5.0",
           "TravelCardsSortingLibrary": "1.0.0",
           "xunit": "2.3.1",
+          "xunit.runner.console": "2.3.1",
           "xunit.runner.visualstudio": "2.3.1"
         },
         "runtime": {
@@ -1028,6 +1029,7 @@
           "lib/netstandard1.1/xunit.execution.dotnet.dll": {}
         }
       },
+      "xunit.runner.console/2.3.1": {},
       "xunit.runner.visualstudio/2.3.1": {
         "dependencies": {
           "Microsoft.NET.Test.Sdk": "15.5.0"
@@ -1577,6 +1579,13 @@
       "sha512": "sha512-i8xrHfKC5dyBWQ7I15FePzm0m8KNToBsTleCCQbOQuXRPZIvupd4nnfaCPeJuKHHe7yJ8JGtWxjIgw0ow/cMhg==",
       "path": "xunit.extensibility.execution/2.3.1",
       "hashPath": "xunit.extensibility.execution.2.3.1.nupkg.sha512"
+    },
+    "xunit.runner.console/2.3.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-bvkd5z72ioJUsLzXuajcXlKtAp/2d7BqdfnluNZEMQbqTEu2xvxKRCNj+OrUKjsrDREwjsYqz6c8pd+/xhPWFg==",
+      "path": "xunit.runner.console/2.3.1",
+      "hashPath": "xunit.runner.console.2.3.1.nupkg.sha512"
     },
     "xunit.runner.visualstudio/2.3.1": {
       "type": "package",
